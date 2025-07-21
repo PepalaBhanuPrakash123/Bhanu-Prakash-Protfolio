@@ -21,6 +21,12 @@ const ResumeSection = () => {
       issuer: "TATA (Forage)",
       skills: ["EDA", "AI Risk Profiling", "Delinquency Prediction", "Business Storytelling"],
       credentialUrl: "https://drive.google.com/file/d/1HRLeUl82Bw3MZLON0rhyw6EEMC7nN0RP/view?usp=sharing"
+    },
+    {
+      title: "Frontend Developer (React)",
+      issuer: "Hacker Rank",
+      skills:  ["React", "JavaScript", "HTML5", "CSS3", "Responsive Design", "Web APIs"],
+      credentialUrl: "https://drive.google.com/file/d/1fEn1_o_Fh-W4qcYF0RicPNV_jsB6H7BX/view?usp=sharing"
     }
   ];
 
@@ -80,14 +86,24 @@ const ResumeSection = () => {
                 <p className="text-muted-foreground">Get the complete PDF version</p>
               </div>
             </div>
-            <Button 
-              size="lg"
-              className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
-              onClick={() => window.open("https://drive.google.com/file/d/1tKrfuHUKb-JVn52XGxBoBml5IMMTmqNT/view?usp=sharing", "_blank")}
-            >
-              <Download className="w-5 h-5 mr-2" />
-              Download PDF Resume
-            </Button>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center sm:items-start w-full">
+  <Button 
+    size="lg"
+    className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce w-[90%] sm:w-auto text-sm sm:text-base text-center"
+    onClick={() => window.open("https://drive.google.com/file/d/1tKrfuHUKb-JVn52XGxBoBml5IMMTmqNT/view?usp=sharing", "_blank")}
+  >
+    <Download className="w-4 h-4 mr-2 sm:w-5 sm:h-5" />Download Data Analyst Resume
+  </Button>
+
+  <Button 
+    size="lg"
+    className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce w-[90%] sm:w-auto text-sm sm:text-base text-center"
+    onClick={() => window.open("https://drive.google.com/file/d/1ctvmaTKkkwmgVgWMGEKez1BSgxTWqDSx/view?usp=sharing", "_blank")}
+  >
+    <Download className="w-4 h-4 mr-2 sm:w-5 sm:h-5" />Download Frontend Resume
+  </Button>
+</div>
+
           </div>
         </div>
 
@@ -96,27 +112,29 @@ const ResumeSection = () => {
           <div className="space-y-12">
 
             {/* Soft Skills */}
-            <div className="scroll-reveal">
-              <div className="flex items-center gap-3 mb-8">
-                <Code className="w-6 h-6 text-accent" />
-                <h3 className="text-2xl font-semibold text-accent">Soft Skills</h3>
-              </div>
-              
-              <div className="glass-card p-6 rounded-xl hover-lift">
-                <div className="grid grid-cols-2 gap-3">
-                  {softSkills.map((skill, index) => (
-                    <div
-                      key={skill}
-                      className="flex items-center gap-2 p-3 glass rounded-lg hover-lift animate-fade-in"
-                      style={{animationDelay: `${index * 0.05}s`}}
-                    >
-                      <div className="w-2 h-2 bg-accent rounded-full"></div>
-                      <span className="text-sm">{skill}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+     {/* Soft Skills */}
+<div className="scroll-reveal ">
+  <div className="flex items-center gap-3 mb-8">
+    <Code className="w-6 h-6 text-accent" />
+    <h3 className="text-2xl font-semibold text-accent">Soft Skills</h3>
+  </div>
+  
+  <div className="glass-card p-6 rounded-xl hover-lift">
+    <div className="flex flex-col gap-3">
+      {softSkills.map((skill, index) => (
+        <div
+          key={skill}
+          className="flex items-center gap-2 p-3 glass rounded-lg hover-lift animate-fade-in"
+          style={{ animationDelay: `${index * 0.05}s` }}
+        >
+          <div className="w-2 h-2 bg-accent rounded-full"></div>
+          <span className="text-sm">{skill}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
           </div>
 
           {/* Right Column */}

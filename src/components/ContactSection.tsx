@@ -22,21 +22,17 @@ const ContactSection = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
+  const { name, email, message } = formData;
 
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
+  const subject = encodeURIComponent("Let's Connect");
+  const body = encodeURIComponent(`Hi Bhanu,\n\n${message}\n\nFrom: ${name}\nEmail: ${email}`);
 
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
-  };
+  window.location.href = `mailto:pepalabhanuprakash@gmail.com?subject=${subject}&body=${body}`;
+};
+
 
   const contactInfo = [
     {
@@ -167,7 +163,7 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <div className="scroll-reveal" style={{animationDelay: '0.3s'}}>
-            <div className="glass-card p-8 rounded-2xl hover-lift">
+            <div className="glass-card p-8 rounded-2xl hover-lift h-[850px]">
               <h3 className="text-2xl font-semibold mb-6">
                 <span className="text-primary">Send a Message</span>
               </h3>

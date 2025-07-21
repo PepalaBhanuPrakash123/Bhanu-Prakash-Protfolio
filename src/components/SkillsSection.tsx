@@ -23,7 +23,7 @@ const SkillsSection = () => {
     {
       id: "tools",
       title: "Tools & Version Control",
-      skills: ["Git", "GitHub", "VS Code", "Jupyter", "Docker"]
+      skills: ["Git", "GitHub", "VS Code", "Jupyter"]
     },
     {
       id: "web",
@@ -50,7 +50,7 @@ const SkillsSection = () => {
   const getSkillColor = (skill: string) => {
     if (["Python", "JavaScript", "React.js", "SQL"].includes(skill)) return "primary";
     if (["Power BI", "Data Visualization", "Matplotlib", "Seaborn"].includes(skill)) return "accent";
-    if (["Git", "GitHub", "Docker", "Vercel"].includes(skill)) return "secondary";
+    if (["Git", "GitHub", "Vercel"].includes(skill)) return "secondary";
     return "muted";
   };
 

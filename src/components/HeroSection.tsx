@@ -64,7 +64,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
+              className=" text-white bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
               onClick={scrollToProjects}
             >
               <ExternalLink className="w-5 h-5 mr-2" />
@@ -74,11 +74,20 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="glass border-primary/30 hover:bg-primary/10 hover-glow transition-bounce"
+              className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
               onClick={() => window.open("https://drive.google.com/file/d/1tKrfuHUKb-JVn52XGxBoBml5IMMTmqNT/view?usp=sharing", "_blank")}
             >
               <Download className="w-5 h-5 mr-2" />
-              Download Resume
+              Download Data Analyst Resume
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
+              onClick={() => window.open("https://drive.google.com/file/d/1ctvmaTKkkwmgVgWMGEKez1BSgxTWqDSx/view?usp=sharing", "_blank")}
+            >
+              <Download className="w-5 h-5 mr-2" />
+              Download Frontend Resume
             </Button>
           </div>
 
