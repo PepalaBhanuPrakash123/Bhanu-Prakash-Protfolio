@@ -68,9 +68,7 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-red-400 animate-pulse" />
-              <span>using React & Tailwind CSS</span>
+              <span>Made This using React & Tailwind CSS</span>
             </div>
           </div>
 
@@ -95,7 +93,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-accent">Let's Connect</h4>
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                Open to freelance opportunities and collaboration.
+                Actively seeking full-time roles and collaborative opportunities in software development and data analytics.
               </p>
               
               <div className="flex gap-3">

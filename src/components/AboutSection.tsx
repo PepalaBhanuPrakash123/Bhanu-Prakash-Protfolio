@@ -40,7 +40,7 @@ const AboutSection = () => {
                   <MapPin className="w-5 h-5 text-primary" />
                   <span className="font-semibold">Location</span>
                 </div>
-                <p className="text-muted-foreground">Nellore, Andhra Pradesh</p>
+                <p className="text-muted-foreground">Hyderabad,Telangana</p>
               </div>
 
               <div className="glass-card p-6 rounded-xl hover-lift">
@@ -117,14 +117,7 @@ const AboutSection = () => {
               </ul>
             </div>
 
-            <Button 
-              size="lg" 
-              className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
-              onClick={() => window.open("https://drive.google.com/file/d/1tKrfuHUKb-JVn52XGxBoBml5IMMTmqNT/view?usp=sharing", "_blank")}
-            >
-              <Download className="w-5 h-5 mr-2" />
-              Download Full Resume
-            </Button>
+            
           </div>
         </div>
       </div>

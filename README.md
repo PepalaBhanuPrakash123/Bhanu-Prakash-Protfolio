@@ -19,7 +19,7 @@ This portfolio is designed to:
 ## 🧠 About This Project
 
 I built this portfolio to represent myself professionally to recruiters, hiring managers, and tech leads.  
-To enhance its design and interactivity, I used **AI tools** to implement advanced animations, effects, and responsiveness.
+To enhance its design and interactivity, I used **AI tools** to implement advanced animations, effects.
 
 ---
 

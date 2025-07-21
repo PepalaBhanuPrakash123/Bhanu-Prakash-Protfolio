@@ -4,7 +4,7 @@ import { Download, ExternalLink, Github, Linkedin } from "lucide-react";
 
 const HeroSection = () => {
   const [currentRole, setCurrentRole] = useState(0);
-  const roles = ["Data Analyst", "Power BI Expert"];
+  const roles = ["Data Analyst", "Power BI Expert","Frontend Developer","React.JS Developer"];
 
   useEffect(() => {
     const interval = setInterval(() => {

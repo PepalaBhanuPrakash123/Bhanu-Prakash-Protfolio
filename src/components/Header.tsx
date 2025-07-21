@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -25,6 +25,7 @@ const Header = () => {
   const navItems = [
     { label: "Home", id: "hero" },
     { label: "About", id: "about" },
+    { label: "Resume", id: "resume" },
     { label: "Skills", id: "skills" },
     { label: "Projects", id: "projects" },
     { label: "Blog", id: "blog" },
@@ -60,19 +61,6 @@ const Header = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
             </button>
           ))}
-          
-          <Button 
-            variant="outline" 
-            size="sm"
-            className="glass border-primary/30 hover:bg-primary/10 hover-glow"
-            onClick={() => {
-              // Download resume logic
-              window.open("#", "_blank");
-            }}
-          >
-            <Download className="w-4 h-4 mr-2" />
-            Resume
-          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -97,18 +85,6 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
-            <Button 
-              variant="outline" 
-              size="sm"
-              className="w-full glass border-primary/30 hover:bg-primary/10"
-              onClick={() => {
-                window.open("#", "_blank");
-                setIsMenuOpen(false);
-              }}
-            >
-              <Download className="w-4 h-4 mr-2" />
-              Download Resume
-            </Button>
           </div>
         </div>
       )}

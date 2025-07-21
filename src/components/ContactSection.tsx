@@ -50,7 +50,7 @@ const ContactSection = () => {
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Location",
-      value: "Nellore, Andhra Pradesh",
+      value: "Hyderabad, Telangana",
       link: null
     }
   ];
@@ -84,7 +84,7 @@ const ContactSection = () => {
             Get In <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Open to freelance opportunities and collaboration. Let's build something amazing together!
+            Actively seeking full-time roles and collaborative opportunities in software development and data analytics.
           </p>
         </div>
 
@@ -156,7 +156,7 @@ const ContactSection = () => {
                 <span className="text-lg font-semibold text-green-400">Available for Work</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Currently open to freelance projects and full-time opportunities in data analytics and web development.
+                Actively seeking full-time roles and collaborative opportunities in software development and data analytics.
               </p>
             </div>
           </div>
