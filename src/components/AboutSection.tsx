@@ -82,7 +82,7 @@ const AboutSection = () => {
                     <p className="text-lg text-muted-foreground">Electronics And Communication Engineering</p>
                     <p className="text-primary font-medium">Visvodaya Engineering College</p>
                     <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                      <span>2020 - 2024</span>
+                      
                       <span>CGPA: 6.45</span>
                     </div>
                   </div>
@@ -95,7 +95,7 @@ const AboutSection = () => {
                     <p className="text-lg text-muted-foreground">Azure-Skynet</p>
                     <p className="text-accent font-medium">Virtual Internship</p>
                     <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                      <span>May 2023 - July 2023</span>
+                      
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
                       Gained hands-on experience in Python scripting, debugging, and automation. 
@@ -120,7 +120,7 @@ const AboutSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
-              onClick={() => window.open("#", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1tKrfuHUKb-JVn52XGxBoBml5IMMTmqNT/view?usp=sharing", "_blank")}
             >
               <Download className="w-5 h-5 mr-2" />
               Download Full Resume

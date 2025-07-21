@@ -7,7 +7,7 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: "Stock Performance Dashboard",
-      description: "Interactive Power BI dashboard comparing stock performance of TATA, Reliance, and HDFC (2023–2025). Features KPI indicators, MACD/RSI analysis, OHLC charts, and custom DAX measures for financial storytelling.",
+      description: "Interactive Power BI dashboard comparing stock performance of TATA, Reliance, and HDFC. Features KPI indicators, MACD/RSI analysis, OHLC charts, and custom DAX measures for financial storytelling.",
       type: "Data Analytics",
       icon: <TrendingUp className="w-6 h-6" />,
       tech: ["Power BI", "DAX", "Excel", "Financial Analysis", "Data Modeling"],

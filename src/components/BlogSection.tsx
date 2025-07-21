@@ -8,7 +8,7 @@ const BlogSection = () => {
       id: 1,
       title: "Building Interactive Power BI Dashboards: A Complete Guide",
       description: "Learn how to create stunning, interactive dashboards that tell compelling data stories. From DAX functions to advanced visualizations.",
-      date: "2024-01-15",
+      
       readTime: "8 min read",
       tags: ["Power BI", "Data Visualization", "DAX"],
       category: "Data Analytics",
@@ -18,7 +18,7 @@ const BlogSection = () => {
       id: 2,
       title: "Python for Data Analysis: Pandas vs NumPy Performance Tips",
       description: "Optimize your data analysis workflow with performance tips and best practices for handling large datasets efficiently.",
-      date: "2024-01-10",
+      
       readTime: "12 min read",
       tags: ["Python", "Pandas", "Performance"],
       category: "Programming",
@@ -28,7 +28,7 @@ const BlogSection = () => {
       id: 3,
       title: "React State Management: When to Use Context vs Redux",
       description: "Understanding the trade-offs between React Context API and Redux for state management in modern web applications.",
-      date: "2024-01-05",
+      
       readTime: "6 min read",
       tags: ["React", "Redux", "Context API"],
       category: "Web Development",
@@ -38,7 +38,7 @@ const BlogSection = () => {
       id: 4,
       title: "SQL Query Optimization for Large Datasets",
       description: "Advanced techniques for writing efficient SQL queries that scale with your data growth.",
-      date: "2023-12-28",
+      
       readTime: "10 min read",
       tags: ["SQL", "Database", "Optimization"],
       category: "Database",
@@ -48,7 +48,7 @@ const BlogSection = () => {
       id: 5,
       title: "Building Responsive Web Apps with Modern CSS",
       description: "Master CSS Grid, Flexbox, and modern layout techniques for creating beautiful, responsive interfaces.",
-      date: "2023-12-20",
+      
       readTime: "7 min read",
       tags: ["CSS", "Responsive Design", "Frontend"],
       category: "Design",
@@ -58,7 +58,7 @@ const BlogSection = () => {
       id: 6,
       title: "Data Storytelling: Making Numbers Meaningful",
       description: "Transform raw data into compelling narratives that drive business decisions and engage stakeholders.",
-      date: "2023-12-15",
+      
       readTime: "9 min read",
       tags: ["Data Storytelling", "Visualization", "Analytics"],
       category: "Data Analytics",
@@ -79,13 +79,6 @@ const BlogSection = () => {
     }
   };
 
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    });
-  };
 
   return (
     <section id="blog" className="py-20 relative">
@@ -152,10 +145,6 @@ const BlogSection = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      {formatDate(post.date)}
-                    </div>
-                    <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
                       {post.readTime}
                     </div>
@@ -219,11 +208,7 @@ const BlogSection = () => {
                   )}
                 </div>
 
-                <div className="flex items-center justify-between text-xs text-muted-foreground">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="w-3 h-3" />
-                    {formatDate(post.date)}
-                  </div>
+                <div className="flex items-center justify-center text-xs text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Clock className="w-3 h-3" />
                     {post.readTime}

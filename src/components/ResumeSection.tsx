@@ -29,7 +29,7 @@ const ResumeSection = () => {
       title: "Python Programming Intern",
       company: "Azure-Skynet",
       type: "Virtual Internship",
-      duration: "May 2023 - July 2023",
+      
       description: "Gained hands-on experience in Python scripting, debugging, and automation. Developed small-scale applications to practice logical structuring and modular programming.",
       achievements: [
         "Improved problem-solving and code optimization skills",
@@ -83,7 +83,7 @@ const ResumeSection = () => {
             <Button 
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
-              onClick={() => window.open("#", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1tKrfuHUKb-JVn52XGxBoBml5IMMTmqNT/view?usp=sharing", "_blank")}
             >
               <Download className="w-5 h-5 mr-2" />
               Download PDF Resume
@@ -94,44 +94,6 @@ const ResumeSection = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Column */}
           <div className="space-y-12">
-            {/* Experience */}
-            <div className="scroll-reveal">
-              <div className="flex items-center gap-3 mb-8">
-                <Briefcase className="w-6 h-6 text-primary" />
-                <h3 className="text-2xl font-semibold text-primary">Experience</h3>
-              </div>
-              
-              <div className="space-y-6">
-                {experience.map((exp, index) => (
-                  <div key={index} className="glass-card p-6 rounded-xl hover-lift">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <h4 className="text-xl font-semibold">{exp.title}</h4>
-                        <p className="text-lg text-primary font-medium">{exp.company}</p>
-                        <p className="text-sm text-muted-foreground">{exp.type}</p>
-                      </div>
-                      <Badge variant="outline" className="glass border-primary/30">
-                        {exp.duration}
-                      </Badge>
-                    </div>
-                    
-                    <p className="text-muted-foreground mb-4">{exp.description}</p>
-                    
-                    <div className="space-y-2">
-                      <h5 className="font-medium text-sm">Key Achievements:</h5>
-                      <ul className="space-y-1">
-                        {exp.achievements.map((achievement, i) => (
-                          <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
 
             {/* Soft Skills */}
             <div className="scroll-reveal">
@@ -173,9 +135,6 @@ const ResumeSection = () => {
                     <p className="text-lg text-primary font-medium">Electronics And Communication Engineering</p>
                     <p className="text-muted-foreground">Visvodaya Engineering College</p>
                     <div className="flex items-center gap-4 mt-2">
-                      <Badge variant="outline" className="glass border-primary/30">
-                        2020 - 2024
-                      </Badge>
                       <Badge variant="secondary" className="glass">
                         CGPA: 6.45
                       </Badge>
@@ -231,28 +190,6 @@ const ResumeSection = () => {
           </div>
         </div>
 
-        {/* Summary Stats */}
-        <div className="mt-16 scroll-reveal">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { number: "15+", label: "Projects Completed", color: "primary" },
-              { number: "3+", label: "Certifications", color: "accent" },
-              { number: "2+", label: "Years Learning", color: "primary" },
-              { number: "100%", label: "Passion Level", color: "accent" }
-            ].map((stat, index) => (
-              <div 
-                key={index}
-                className="glass-card p-6 rounded-xl hover-lift text-center animate-bounce-in"
-                style={{animationDelay: `${index * 0.1}s`}}
-              >
-                <div className={`text-3xl font-bold mb-2 ${stat.color === 'primary' ? 'text-primary' : 'text-accent'}`}>
-                  {stat.number}
-                </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
