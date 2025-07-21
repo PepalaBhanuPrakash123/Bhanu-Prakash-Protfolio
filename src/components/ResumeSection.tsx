@@ -90,7 +90,7 @@ const ResumeSection = () => {
   <Button 
     size="lg"
     className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce w-[90%] sm:w-auto text-sm sm:text-base text-center"
-    onClick={() => window.open("https://drive.google.com/file/d/1tKrfuHUKb-JVn52XGxBoBml5IMMTmqNT/view?usp=sharing", "_blank")}
+    onClick={() => window.open("https://drive.google.com/file/d/1_dsUw_8jdF6h3B5TSKuEUC5pStMXU5a4/view?usp=sharing", "_blank")}
   >
     <Download className="w-4 h-4 mr-2 sm:w-5 sm:h-5" />Download Data Analyst Resume
   </Button>
@@ -98,7 +98,7 @@ const ResumeSection = () => {
   <Button 
     size="lg"
     className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce w-[90%] sm:w-auto text-sm sm:text-base text-center"
-    onClick={() => window.open("https://drive.google.com/file/d/1X6ZJ3-rSUaPoYCi1GwDMJz28HKZJ3BP0/view?usp=sharing", "_blank")}
+    onClick={() => window.open("https://drive.google.com/file/d/1AOe9hOyhhB620zh4BzbRR6zTGr4P_xHx/view?usp=sharing", "_blank")}
   >
     <Download className="w-4 h-4 mr-2 sm:w-5 sm:h-5" />Download Frontend Resume
   </Button>
