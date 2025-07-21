@@ -64,7 +64,7 @@ const AboutSection = () => {
                   <Calendar className="w-5 h-5 text-primary" />
                   <span className="font-semibold">Experience</span>
                 </div>
-                <p className="text-muted-foreground">2+ Years</p>
+                <p className="text-muted-foreground">Fresher</p>
               </div>
             </div>
           </div>

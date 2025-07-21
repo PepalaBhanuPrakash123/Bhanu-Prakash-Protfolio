@@ -147,46 +147,47 @@ const ResumeSection = () => {
               </div>
             </div>
 
-            {/* Certifications */}
-            <div className="scroll-reveal">
-              <div className="flex items-center gap-3 mb-8">
-                <Award className="w-6 h-6 text-accent" />
-                <h3 className="text-2xl font-semibold text-accent">Certifications</h3>
-              </div>
-              
-              <div className="space-y-6">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="glass-card p-6 rounded-xl hover-lift">
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="flex-1">
-                        <h4 className="text-lg font-semibold">{cert.title}</h4>
-                        <p className="text-accent font-medium">{cert.issuer}</p>
-                      </div>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="text-primary hover:text-primary/80 hover:bg-primary/10"
-                        onClick={() => window.open(cert.credentialUrl, "_blank")}
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                      </Button>
-                    </div>
-                    
-                    <div className="flex flex-wrap gap-2">
-                      {cert.skills.map((skill) => (
-                        <Badge 
-                          key={skill} 
-                          variant="outline" 
-                          className="text-xs glass border-accent/30"
-                        >
-                          {skill}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+   {/* Certifications */}
+<div className="scroll-reveal">
+  <div className="flex items-center gap-3 mb-8">
+    <Award className="w-6 h-6 text-accent" />
+    <h3 className="text-2xl font-semibold text-accent">Certifications</h3>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {certifications.map((cert, index) => (
+      <div key={index} className="glass-card p-6 rounded-xl hover-lift">
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex-1">
+            <h4 className="text-lg font-semibold">{cert.title}</h4>
+            <p className="text-accent font-medium">{cert.issuer}</p>
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="text-primary hover:text-primary/80 hover:bg-primary/10"
+            onClick={() => window.open(cert.credentialUrl, "_blank")}
+          >
+            <ExternalLink className="w-4 h-4" />
+          </Button>
+        </div>
+        
+        <div className="flex flex-wrap gap-2">
+          {cert.skills.map((skill) => (
+            <Badge 
+              key={skill} 
+              variant="outline" 
+              className="text-xs glass border-accent/30"
+            >
+              {skill}
+            </Badge>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
           </div>
         </div>
 
