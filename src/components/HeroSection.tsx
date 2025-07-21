@@ -84,7 +84,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
-              onClick={() => window.open("https://drive.google.com/file/d/1ctvmaTKkkwmgVgWMGEKez1BSgxTWqDSx/view?usp=sharing", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1X6ZJ3-rSUaPoYCi1GwDMJz28HKZJ3BP0/view?usp=sharing", "_blank")}
             >
               <Download className="w-5 h-5 mr-2" />
               Download Frontend Resume
