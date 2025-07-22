@@ -98,7 +98,7 @@ const ResumeSection = () => {
   <Button 
     size="lg"
     className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce w-[90%] sm:w-auto text-sm sm:text-base text-center"
-    onClick={() => window.open("https://drive.google.com/file/d/1AOe9hOyhhB620zh4BzbRR6zTGr4P_xHx/view?usp=sharing", "_blank")}
+    onClick={() => window.open("https://drive.google.com/file/d/1TwDaQ080igHmWnlMijCVnDN7xwIVVAUC/view?usp=sharing", "_blank")}
   >
     <Download className="w-4 h-4 mr-2 sm:w-5 sm:h-5" />Download Frontend Resume
   </Button>
