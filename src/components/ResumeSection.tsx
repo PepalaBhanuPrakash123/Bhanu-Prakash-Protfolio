@@ -8,7 +8,7 @@ const ResumeSection = () => {
       title: "IBM Data Analysis with Python",
       issuer: "IBM",
       skills: ["Python", "Pandas", "NumPy", "Data Wrangling", "Visualization"],
-      credentialUrl: "https://drive.google.com/file/d/1eH2GVRBFGtvWcTmfKb0Tpav4vO6-9V6Z/view?usp=sharing"
+      credentialUrl: "https://drive.google.com/file/d/1UCOthogpoPzHYLw_pR94MLzSHBP7xrNW/view?usp=sharing"
     },
     {
       title: "Data Analytics Job Simulation",
