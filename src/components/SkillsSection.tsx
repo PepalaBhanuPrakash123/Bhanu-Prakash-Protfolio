@@ -90,7 +90,7 @@ const SkillsSection = () => {
               onClick={() => setActiveCategory(category.id)}
               className={`px-6 py-3 rounded-full transition-all duration-300 ${
                 activeCategory === category.id
-                  ? "bg-gradient-to-r from-primary to-accent text-white glow-primary"
+                  ? "bg-gradient-to-r from-primary to-accent text-white "
                   : "glass hover:bg-primary/10 text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -121,8 +121,8 @@ const SkillsSection = () => {
                         key={skill}
                         variant="secondary"
                         className={`text-lg px-4 py-2 glass hover-lift cursor-pointer animate-fade-in ${
-                          getSkillColor(skill) === "primary" ? "hover:bg-primary/20 hover:text-primary glow-primary" :
-                          getSkillColor(skill) === "accent" ? "hover:bg-accent/20 hover:text-accent glow-accent" :
+                          getSkillColor(skill) === "primary" ? "hover:text-white" :
+                          getSkillColor(skill) === "accent" ? " hover:text-white " :
                           "hover:bg-secondary/20"
                         }`}
                         style={{animationDelay: `${skillIndex * 0.05}s`}}
@@ -143,8 +143,8 @@ const SkillsSection = () => {
                     key={skill}
                     variant="secondary"
                     className={`text-xl px-6 py-3 glass hover-lift cursor-pointer animate-bounce-in ${
-                      getSkillColor(skill) === "primary" ? "hover:bg-primary/20 hover:text-primary glow-primary" :
-                      getSkillColor(skill) === "accent" ? "hover:bg-accent/20 hover:text-accent glow-accent" :
+                      getSkillColor(skill) === "primary" ? "hover:text-white" :
+                      getSkillColor(skill) === "accent" ? "hover:text-white" :
                       "hover:bg-secondary/20"
                     }`}
                     style={{animationDelay: `${index * 0.1}s`}}
@@ -176,7 +176,7 @@ const SkillsSection = () => {
                   className="text-center p-4 glass rounded-lg hover-lift animate-fade-in"
                   style={{animationDelay: `${index * 0.05}s`}}
                 >
-                  <span className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth">
+                  <span className="text-sm font-medium text-muted-foreground hover:text-white transition-smooth">
                     {concept}
                   </span>
                 </div>

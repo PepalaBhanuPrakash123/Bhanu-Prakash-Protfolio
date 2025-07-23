@@ -139,31 +139,6 @@ const ResumeSection = () => {
 
           {/* Right Column */}
           <div className="space-y-12">
-            {/* Education */}
-            <div className="scroll-reveal">
-              <div className="flex items-center gap-3 mb-8">
-                <GraduationCap className="w-6 h-6 text-primary" />
-                <h3 className="text-2xl font-semibold text-primary">Education</h3>
-              </div>
-              
-              <div className="glass-card p-6 rounded-xl hover-lift">
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-xl font-semibold">Bachelor of Technology (B.Tech)</h4>
-                    <p className="text-lg text-primary font-medium">Electronics And Communication Engineering</p>
-                    <p className="text-muted-foreground">Visvodaya Engineering College</p>
-                    <div className="flex items-center gap-4 mt-2">
-                      <Badge variant="secondary" className="glass">
-                        CGPA: 6.45
-                      </Badge>
-                    </div>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Nellore, Andhra Pradesh
-                  </p>
-                </div>
-              </div>
-            </div>
 
    {/* Certifications */}
 <div className="scroll-reveal">

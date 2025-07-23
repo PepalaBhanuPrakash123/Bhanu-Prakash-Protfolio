@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Download, ExternalLink, Github, Linkedin } from "lucide-react";
+import { Download, ExternalLink, Github, Linkedin , Eye } from "lucide-react";
 
 const HeroSection = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -67,7 +67,7 @@ const HeroSection = () => {
               className=" text-white bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
               onClick={scrollToProjects}
             >
-              <ExternalLink className="w-5 h-5 mr-2" />
+              <Eye className="w-5 h-5 mr-2" />
               View Projects
             </Button>
             
