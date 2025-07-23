@@ -8,6 +8,7 @@ import BlogSection from "@/components/BlogSection";
 import ResumeSection from "@/components/ResumeSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import TechLandingPage from "@/components/"
 
 const Index = () => {
   useEffect(() => {

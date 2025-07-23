@@ -35,7 +35,6 @@ const ProjectsSection = () => {
       type: "Business Intelligence",
       icon: <Zap className="w-6 h-6" />,
       tech: ["MySQL", "Python", "Pandas", "Seaborn", "Matplotlib", "SQLAlchemy"],
-      liveUrl: "https://github.com/PepalaBhanuPrakash123/blinkit-sales-analysis",
       githubUrl: "https://github.com/PepalaBhanuPrakash123/blinkit-sales-analysis",
       featured: false,
       color: "secondary"
