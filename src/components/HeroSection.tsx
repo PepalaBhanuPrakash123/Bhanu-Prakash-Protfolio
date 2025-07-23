@@ -55,8 +55,8 @@ const HeroSection = () => {
             </div>
             
             <p className="text-xl text-muted-foreground max-w-2xl">
-              Crafting intelligent, data-driven solutions and modern web experiences. 
-              Passionate about transforming complex data into actionable insights.
+              Crafting intelligent, data-driven solutions and modern web experiences with precision and purpose. 
+              Committed to transforming complex datasets into strategic, actionable insights that drive business outcomes.
             </p>
           </div>
 
