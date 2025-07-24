@@ -50,7 +50,7 @@ export default function TechLandingPage() {
   transition={{ delay: 0.9, duration: 1.2 }}
   className="mt-12 max-w-[90%] sm:max-w-2xl md:max-w-3xl text-lg sm:text-2xl md:text-3xl lg:text-4xl text-gray-300 font-semibold leading-relaxed"
 >
-  Press Enter to break the loop
+  Click Anywhere to break the loop
 </motion.p>
 
         <motion.div
