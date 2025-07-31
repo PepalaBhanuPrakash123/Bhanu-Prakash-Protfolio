@@ -29,16 +29,18 @@ const ProjectsSection = () => {
       color: "accent"
     },
     {
-      id: 3,
+      id: 5,
       title: "BlinkIt Sales Analysis",
       description: "End-to-end data pipeline performing ETL operations, data cleaning and aggregation using SQL. Built 8+ visualizations with Python libraries for comprehensive sales insights and reporting.",
       type: "Business Intelligence",
-      icon: <Zap className="w-6 h-6" />,
+       icon: <BarChart3 className="w-6 h-6" />,
       tech: ["MySQL", "Python", "Pandas", "Seaborn", "Matplotlib", "SQLAlchemy"],
       githubUrl: "https://github.com/PepalaBhanuPrakash123/blinkit-sales-analysis",
-      featured: false,
-      color: "secondary"
+      featured: true,
+      color: "accent"
     },
+    
+    
     {
       id: 4,
       title: "Weather Forecast App",
@@ -48,11 +50,11 @@ const ProjectsSection = () => {
       tech: ["React.js", "OpenWeatherMap API", "HTML5", "CSS3", "JavaScript", "Vercel"],
       liveUrl: "https://weather-app-nine-indol-87.vercel.app/",
       githubUrl: "https://github.com/PepalaBhanuPrakash123/weather-app",
-      featured: false,
-      color: "primary"
+      featured: true,
+      color: "accent"
     },
     {
-      id: 5,
+      id: 3,
       title: "Doctor Appointment System",
       description: "Full-stack React.js application with Firebase authentication and real-time database. Features doctor search, profile viewing, appointment booking, and responsive mobile-first design with Redux state management.",
       type: "Web Application",
@@ -98,7 +100,7 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 scroll-reveal">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Featured <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Projects</span>
+            Key <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Showcasing data analytics dashboards, web applications, and innovative solutions
@@ -108,7 +110,6 @@ const ProjectsSection = () => {
         {/* Featured Projects */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-8 text-center scroll-reveal">
-            <span className="text-primary">Featured Work</span>
           </h3>
           <div className="grid lg:grid-cols-2 gap-8">
             {projects.filter(p => p.featured).map((project, index) => (
@@ -156,7 +157,7 @@ const ProjectsSection = () => {
                     onClick={() => window.open(project.liveUrl, "_blank")}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    View Project
+                    Live Demo
                   </Button>
                   
                   <Button 
@@ -174,7 +175,7 @@ const ProjectsSection = () => {
           </div>
         </div>
 
-        {/* Other Projects */}
+        {/* Other Projects
         <div>
           <h3 className="text-2xl font-semibold mb-8 text-center scroll-reveal">
             <span className="text-accent">Other Projects</span>
@@ -240,7 +241,7 @@ const ProjectsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* View More */}
         <div className="text-center mt-12 scroll-reveal">

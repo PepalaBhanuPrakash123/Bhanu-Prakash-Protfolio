@@ -16,9 +16,8 @@ const AboutSection = () => {
             About <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Dedicated to translating complex data into strategic business insights and developing innovative,
-            high-performance web solutions that enhance user experience and drive measurable outcomes.
-          </p>
+           I am a dedicated professional with dual expertise in data analytics and frontend development,
+            transforming complex data into actionable insights while crafting engaging, user-centric digital experiences.       </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -27,12 +26,9 @@ const AboutSection = () => {
             <div className="glass-card p-8 rounded-2xl hover-lift">
               <h3 className="text-2xl font-semibold mb-4 text-primary">Career Objective</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Versatile and results-oriented professional with a strong foundation in both data analytics and frontend development,
-                capable of transforming raw data into strategic insights and building intuitive, high-performance web interfaces.
-                Skilled in Power BI, SQL, Python, React.js, JavaScript, and modern UI/UX frameworks,
-                with hands-on experience delivering business dashboards and interactive applications. Demonstrates a keen understanding of user behavior,
-                data-driven decision making, and cross-functional collaboration. Committed to creating scalable,
-                user-centric digital solutions that align with organizational goals and drive measurable business impact.
+                Versatile Data Analyst and Frontend Developer with expertise in Power BI, SQL, Python, React.js, and JavaScript. 
+                Committed to transforming data into actionable insights and crafting clean, user-focused web applications.
+                 Eager to contribute to impactful projects that drive data-informed decisions and deliver exceptional digital experiences.
               </p>
             </div>
 
@@ -116,7 +112,6 @@ const AboutSection = () => {
                 <li>🎨 Craft intuitive user interfaces that feel like second nature</li>
                 <li>⚙️ Blend analytics with frontend to build full-stack business solutions</li>
                 <li>🧠 Constantly upskilling across tools, trends, and tech stacks</li>
-                <li>🌍 Believe great design and data can solve real-world problems</li>
               </ul>
             </div>
 
