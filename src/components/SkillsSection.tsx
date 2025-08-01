@@ -167,9 +167,11 @@ const SkillsSection = () => {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {[
-                "ETL", "Data Modeling", "KPIs", "Forecasting", "Dashboarding", 
-                "Data Storytelling", "Responsive Design", "Cross-Browser Compatibility", 
-                "State Management", "Version Control", "Agile", "Problem Solving"
+                "ETL", "Data Cleaning", "Data Modeling", "Big Data Handling", 
+    "KPIs & DAX", "Forecasting", "Dashboarding", "Data Visualization",
+    "Data Storytelling", "AI in BI", "Power BI", "OpenRefine","GenAi",
+    "React.js", "State Management", "Tailwind CSS", "Bootstrap",
+    "API Integration", "Git & GitHub", "Agile", "Problem Solving"
               ].map((concept, index) => (
                 <div
                   key={concept}
