@@ -75,7 +75,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
-              onClick={() => window.open("https://drive.google.com/file/d/1_dsUw_8jdF6h3B5TSKuEUC5pStMXU5a4/view?usp=sharing", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/1rUQufV5Tr9yIM05yPLcnpfZjv_aLVHl3/view?usp=sharing", "_blank")}
             >
               <Download className="w-5 h-5 mr-2" />
               Download Data Analyst Resume
