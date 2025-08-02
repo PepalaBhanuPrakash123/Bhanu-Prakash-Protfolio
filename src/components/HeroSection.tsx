@@ -75,7 +75,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
-              onClick={() => window.open("https://drive.google.com/file/d/1rUQufV5Tr9yIM05yPLcnpfZjv_aLVHl3/view?usp=sharing", "_blank")}
+              onClick={() => window.open("https://resume-host-oh6hx4rny-pepalabhanuprakash123s-projects.vercel.app/dataanalyst_resume.pdf", "_blank")}
             >
               <Download className="w-5 h-5 mr-2" />
               Download Data Analyst Resume
@@ -84,7 +84,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 glow-primary transition-bounce"
-              onClick={() => window.open("https://drive.google.com/file/d/1TwDaQ080igHmWnlMijCVnDN7xwIVVAUC/view?usp=sharing", "_blank")}
+              onClick={() => window.open("https://resume-host-hawdfmuml-pepalabhanuprakash123s-projects.vercel.app/frontend_resume.pdf", "_blank")}
             >
               <Download className="w-5 h-5 mr-2" />
               Download Frontend Resume
